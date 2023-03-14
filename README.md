@@ -1,5 +1,5 @@
 ## GSD-6338-Introduction-to-Computational-Design
-My class projects in the GSD 6338 about using C# , python and grasshopper in Geometric Computation 
+My class projects in the GSD 6338 about using C# , Python and grasshopper in Geometric Computation 
 # 4D Visualization
 ### Collaboration
 Lingbo Li, Sheng Qian  
