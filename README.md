@@ -1,9 +1,26 @@
-# GSD-6338-Introduction-to-Computational-Design
+## GSD-6338-Introduction-to-Computational-Design
 My class projects in the GSD 6338 about using C# , python and grasshopper in Geometric Computation and Data Visualization 
-
-## Kirigametry
+# 4D Visualization
 ### Collaboration
-Lingbo Li, Henry Chung
+Lingbo Li, Sheng Qian  
+Video Link: https://youtu.be/11GrcHLRRIw
+
+### Project Statement
+In the general understanding, the 4th Dimension is time. But in this Assignment, we are not focusing on the 3D slices along various points in time. We are interested in   considering the 4th Dimension as a Spatial Dimension. Imagine there is a 4th axis w perpendicular to the world coordinate system (x,y,z). And each point in a 4D space    have 4 components. The coordinate of a 4D point is (x,y,z,w).Now, the key here is that what the 4D being sees are 3D images, and we understand 3D very well, so it is   perfectly possible for us to “see” the images in the 4D being's eyes. All we need to do is to learn how to infer the 4th dimension from these 3D images.  
+  
+In the Grasshopper script, the first step is to scale and locate the imported file in the world center , then remesh existing 3d scan objects in to a fixed amount of  dots.Inside the C# components, the alogrithm extrudes all points along the 4th axis (w = [-10,10]) and applies a 4d rotation matrix to the points. Finally, it filters  the transformed points whose w is equal to 0. For display, it colors all visible points by their original relative w distance to w = 0. So in the sequencial images  above, we can clear see which points are from other hyperplane.
+  
+### Dimensional Analogy
+![analogy](https://github.com/shuhanmomo/GSD-6338-Introduction-to-Computational-Design/blob/f8fefb0260214ccbb1d26c64a9bdf10edfbd723d/img/4d-mechanism.png)
+### Grasshopper Script
+The grasshopper and C# script inside is stored under the folder'4D Visualization'
+![4dscript](https://github.com/shuhanmomo/GSD-6338-Introduction-to-Computational-Design/blob/f8fefb0260214ccbb1d26c64a9bdf10edfbd723d/img/4d-script.png)
+### Visualization Result
+![4dvisualization](https://github.com/shuhanmomo/GSD-6338-Introduction-to-Computational-Design/blob/f8fefb0260214ccbb1d26c64a9bdf10edfbd723d/img/4d-transformation.png)
+
+# Kirigametry
+### Collaboration
+Lingbo Li, Henry Chung  
 Video Link: https://youtu.be/a-1zU8A4ovI
 
 ### Project Statement
@@ -23,23 +40,6 @@ what the script trying to do is to implement the algorithm from paper to build t
   
   
   
-## 4D Visualization
-### Collaboration
-Lingbo Li, Sheng Qian  
-Video Link: https://youtu.be/11GrcHLRRIw
-
-### Project Statement
-In the general understanding, the 4th Dimension is time. But in this Assignment, we are not focusing on the 3D slices along various points in time. We are interested in   considering the 4th Dimension as a Spatial Dimension. Imagine there is a 4th axis w perpendicular to the world coordinate system (x,y,z). And each point in a 4D space    have 4 components. The coordinate of a 4D point is (x,y,z,w).Now, the key here is that what the 4D being sees are 3D images, and we understand 3D very well, so it is   perfectly possible for us to “see” the images in the 4D being's eyes. All we need to do is to learn how to infer the 4th dimension from these 3D images.  
-  
-In the Grasshopper script, the first step is to scale and locate the imported file in the world center , then remesh existing 3d scan objects in to a fixed amount of  dots.Inside the C# components, the alogrithm extrudes all points along the 4th axis (w = [-10,10]) and applies a 4d rotation matrix to the points. Finally, it filters  the transformed points whose w is equal to 0. For display, it colors all visible points by their original relative w distance to w = 0. So in the sequencial images  above, we can clear see which points are from other hyperplane.
-  
-### Dimensional Analogy
-![analogy](https://github.com/shuhanmomo/GSD-6338-Introduction-to-Computational-Design/blob/f8fefb0260214ccbb1d26c64a9bdf10edfbd723d/img/4d-mechanism.png)
-### Grasshopper Script
-The grasshopper and C# script inside is stored under the folder'4D Visualization'
-![4dscript](https://github.com/shuhanmomo/GSD-6338-Introduction-to-Computational-Design/blob/f8fefb0260214ccbb1d26c64a9bdf10edfbd723d/img/4d-script.png)
-### Visualization Result
-![4dvisualization](https://github.com/shuhanmomo/GSD-6338-Introduction-to-Computational-Design/blob/f8fefb0260214ccbb1d26c64a9bdf10edfbd723d/img/4d-transformation.png)
 
 
 
